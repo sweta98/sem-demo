@@ -1,0 +1,18 @@
+.Todo-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #282c34;
+    position: absolute;
+    top: 10vh;
+    color: white;
+
+}
+.grid-half{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid #fff;
+}
