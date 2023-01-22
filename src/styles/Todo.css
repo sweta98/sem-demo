@@ -11,8 +11,15 @@
 
 }
 .grid-half{
-    /* background-color: red; */
     height: 100%;
     width: 100%;
     border-right: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+}
+.items-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2vh;
 }

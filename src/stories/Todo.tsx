@@ -3,12 +3,16 @@ import React from 'react';
 import '../styles/Todo.css';
 
 type TodoProps = {
+     /**
+   * List of user added todo items
+   */
     items: string[],
     id?: number
 };
   
 const Todo = (props: TodoProps) => {
 const {items} = props;
+console.log(items);
   return (
     <div className="Todo-container">
 
