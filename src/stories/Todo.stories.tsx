@@ -1,7 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { within, userEvent } from '@storybook/testing-library';
-import  Todo  from './Todo';
+import  Todo  from '../components/Todo';
 
 export default {
   title: 'Todo',
