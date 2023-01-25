@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import  Todo  from '../components/Todo';
+import  {Todo}  from '../components/Todo';
 
 export default {
   title: 'Todo',

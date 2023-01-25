@@ -3,7 +3,7 @@ import '../styles/Header.css';
 export interface HeaderProps {
     title: string;
 }
-export const Header = (props: HeaderProps) => {
+export const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
     return (
         <header className="header">
             <h1>{props.title}</h1>

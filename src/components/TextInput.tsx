@@ -1,7 +1,10 @@
 import React from "react";
-export const TextInput = () => {
+export interface TextInputProps {
+    reference: React.RefObject<HTMLInputElement>;
+};
+export const TextInput : React.FC<TextInputProps> = (props:TextInputProps) => {
     return (
-        <input type="text" placeholder="Enter an item"
+        <input type="text" placeholder="Enter an item" ref={props.reference}
         />
     );
     };
