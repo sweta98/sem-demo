@@ -3,13 +3,10 @@ import React from 'react';
 import '../styles/Todo.css';
 import { Button } from './Button';
 import { TextInput } from './TextInput';
-// type TodoProps = {
-//     items: string[],
-//     id?: number
-// };
+
 
 export const Todo : React.FC = () => {
-    const [items, setItems] = React.useState<string[]>([]);
+const [items, setItems] = React.useState<string[]>([]);
 const inputRef = React.useRef<HTMLInputElement>(null);
 const addItem = (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
@@ -23,7 +20,7 @@ const addItem = (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 
         <div className="grid-half">
             <div>
-            <h2>enter an item to your list</h2>
+            <h2>Enter an item to your TO-DO list</h2>
                 <TextInput reference={inputRef} />
                 <Button onClick={addItem} label="Add Item"/>
             </div>
@@ -31,8 +28,9 @@ const addItem = (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         
         <div className="grid-half">
             <div className="items-list">
+            {items && items.length ? <h2>Pending items</h2> : ""}
             {
-                items.map((item) =>  <p>{item}</p>)
+                items.map((item) =>  <p className='list-item'>{item}</p>)
             }
             </div>
         </div>

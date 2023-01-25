@@ -14,8 +14,8 @@ export default {
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
+export const Default = Template.bind({});
+Default.args = {
  
     title: "Page title"
 

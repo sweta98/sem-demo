@@ -1,0 +1,9 @@
+.text-box {
+    background-color: #707379;
+
+    height: 5vh;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    border: 2px solid #fff
+   }
